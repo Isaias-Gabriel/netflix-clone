@@ -1,6 +1,7 @@
 :root {
     --vermelha: #e50914;
     --preta: #141414;
+    --main-texts: 'Trebuchet MS', Arial, sans-serif;
 }
 
 * {
@@ -21,12 +22,24 @@ body {
 /* barra de navegação */
 
 header .container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
     display: flex;
 
     flex-direction: row;
 
     align-items: center;
     justify-content: space-between;
+
+    height: 70px;
+
+    background: linear-gradient(
+        var(--preta) 10%,
+        rgba(0, 0, 0, 0) 100%
+    );
 }
 
 header .logo {
@@ -41,7 +54,8 @@ header .logo {
 header nav a {
     text-decoration: none;
 
-    color: #aaa;
+    font-size: 20px;
+    color: rgb(220, 220, 220);
 
     margin-right: 10px;
 }
@@ -59,8 +73,6 @@ header nav a:hover {
     justify-content: center;
     align-items: flex-start;
 
-    font-size: 16px;
-
     background: linear-gradient(
         90deg,
         var(--preta) 0%,
@@ -74,21 +86,59 @@ header nav a:hover {
     height: 500px;
 }
 
+.midia-principal .container {
+    min-width: 600px;
+    width: 40vw;
+
+    margin-left: 40px;
+}
+
 .midia-principal .titulo {
     margin-bottom: 20px;
 
-    font-size: 40px;
+    font-family: var(--main-texts);
+    font-size: 45px;
 }
 
 .midia-principal .descricao {
     margin-bottom: 40px;
+
+    font-family: var(--main-texts);
+    font-size: 20px;
 }
 
+.botao {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
 
+    color: white;
 
+    margin-right: 10px;
+    padding: 15px 30px;
 
+    font-size: 13px;
 
+    cursor: pointer;
 
+    transition: 0.3s all;
+}
+
+.botao i {
+    margin-right: 5px;
+}
+
+.botao:hover {
+    background-color: rgb(255, 255, 255, 0.8);
+    color: var(--preta);
+}
+
+.box-midia {
+    height: 100%;
+    width: 100%;
+    display: block;
+
+    border-radius: 1px;
+}
 
 
 

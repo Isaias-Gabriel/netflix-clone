@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
 
+    <!-- responsividade -->
+    <link rel="stylesheet" href="/styles/responsive.css">
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="/styles/owl_carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="/styles/owl_carousel/owl.theme.default.min.css">
+
     <title>NETFLIX CLONE</title>
 </head>
 <body>
@@ -15,10 +22,10 @@
             </h2>
 
             <nav>
-                <a href="#">Início</a>
-                <a href="#">Séries</a>
-                <a href="#">Filmes</a>
-                <a href="#">Novos e populares</a>
+                <a href="#">Home</a>
+                <a href="#">Series</a>
+                <a href="#">Movies</a>
+                <a href="#">New and popular</a>
             </nav>
         </div>
     </header>
@@ -38,15 +45,56 @@
 
                 <div class="botoes">
                     <button role="button" class="botao">
-                        Assistir agora
+                        <i class="fas fa-play"></i>
+
+                        WATCH NOW
                     </button>
         
                     <button role="button" class="botao">
-                        Mais informações
+                        <i class="fas fa-info-circle"></i>
+                        
+                        MORE INFO
                     </button>
                 </div>
             </div>
         </div>
     </main>
+
+    <div class="carrossel-midias">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-midia" src="img/mini-1.jpg" alt="">
+            </div>
+
+            <div class="item">
+                <img class="box-midia" src="img/mini-2.jpg" alt="">
+            </div>
+            
+            <div class="item">
+                <img class="box-midia" src="img/mini-3.jpg" alt="">
+            </div>
+            
+            <div class="item">
+                <img class="box-midia" src="img/mini-4.jpg" alt="">
+            </div>
+
+            <div class="item">
+                <img class="box-midia" src="img/mini-5.jpg" alt="">
+            </div>
+
+            <div class="item">
+                <img class="box-midia" src="img/mini-6.jpg" alt="">
+            </div>
+
+            <div class="item">
+                <img class="box-midia" src="img/mini-7.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <script src="/js/owl_carousel/jquery.min.js"></script>
+    <script src="/js/owl_carousel/owl.carousel.min.js"></script>
+    <script src="/js/owl_carousel/setup.js"></script>
 </body>
 </html>
