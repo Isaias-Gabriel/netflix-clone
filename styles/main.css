@@ -1,0 +1,111 @@
+:root {
+    --vermelha: #e50914;
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preta);
+
+    color: white;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* barra de navegação */
+
+header .container {
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--vermelha);
+
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+
+    margin: 0 10px;
+}
+
+header nav a {
+    text-decoration: none;
+
+    color: #aaa;
+
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* mídia principal */
+
+.midia-principal {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    font-size: 16px;
+
+    background: linear-gradient(
+        90deg,
+        var(--preta) 0%,
+        rgba(0, 0, 0, 0) 100%
+    ),
+        url('/img/close-enough-backdrop.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 500px;
+}
+
+.midia-principal .titulo {
+    margin-bottom: 20px;
+
+    font-size: 40px;
+}
+
+.midia-principal .descricao {
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
